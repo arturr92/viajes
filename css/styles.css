@@ -48,8 +48,20 @@ h1,h2,h3 {
     text-decoration: none;
     margin-left: 30px;
 }
+.nav__ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin-left: 20px;
+    transition: 0.8s;
+}
+.nav__ul li a:hover::after {
+    width: 100%;
+}
 .nav__ul li a:hover {
-    color: #FFD700;
+    color:#FFD700;
 }
 .banner {
     position: relative;
@@ -78,13 +90,20 @@ h1,h2,h3 {
 }
 .banner__btn {
     display: inline-block;
-    background-color: #1E90FF;
-    color: #fff;
-    padding: 20px 40px;
-    text-decoration: none;
     font-size: 25px;
     margin-top: 20px;
+    padding: 20px 40px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
 }  
+.banner__btn:hover {
+    background-color: #1E90FF;
+    border: 1px solid #1E90FF;
+    transition: 1s;
+}
 .destinos {
     width: 80%;
     margin: auto;
@@ -102,6 +121,12 @@ h1,h2,h3 {
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: center;
+    padding: 10px;
+    transition: 1s;
+}
+.destinos__card:hover {
+    background-color: #D1F2EB;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 .destinos__card img {
     width: 100%;
@@ -211,6 +236,9 @@ ul {
     padding: 0px 5px 25px 5px;
     background: #EAECEE;
 }
+.paquetes__card:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
 .paquetes__card img {
     width: 100%;
     border-radius: 10px;
@@ -239,11 +267,15 @@ ul {
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: #D1F2EB;
+    background: #fff3f3;
     padding: 25px;
+    transition: 0.5s;
 }
 .testimoniales__card h3 {
     margin-top: 15px;
+}
+.testimoniales__card:hover {
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 .nosotros {
     width: 90%;
@@ -302,8 +334,6 @@ ul {
     .header__title {
         font-size: 30px;
         text-align: left;
-    }   
-    .nav__ul {
     }
     .nav__ul li a {
         display: flex;
