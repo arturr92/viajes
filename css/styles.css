@@ -13,7 +13,15 @@ h1,h2,h3 {
 .nav-item a:hover {
     color:#FFD700;
 }
+.navbar p {
+    display: inline-block;
+    position: relative;
+    top: 12px;
+    margin-left: 20px;
+    font-size: 40px;
+}
 
+/* BANNER */
 .banner {
     position: relative;
 }
@@ -55,6 +63,8 @@ h1,h2,h3 {
     border: 1px solid #1E90FF;
     transition: 1s;
 }
+
+/* DESTINOS */
 .destinos {
     width: 80%;
     margin: auto;
@@ -70,7 +80,7 @@ h1,h2,h3 {
 .destinos__card {
     flex-basis: 31%;
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     text-align: center;
     padding: 10px;
     transition: 1s;
@@ -81,6 +91,7 @@ h1,h2,h3 {
 }
 .destinos__card img {
     width: 100%;
+    height: 55%;
     border-radius: 10px;
 }
 .destinos__card h3 {
@@ -100,11 +111,14 @@ footer {
 .footer__links a:hover{
     color: #FFD700;
 }
+
+/* PAQUETES */
 .paquetes {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 .paquetes__cards {
     margin-top: 5%;
@@ -135,6 +149,8 @@ footer {
     margin: 5px 0px 5px 0px;
     line-height: 20px;
 }
+
+/* TESTIMONIALES */
 .testimoniales {
     width: 80%;
     margin: auto;
@@ -162,6 +178,8 @@ footer {
 .testimoniales__card:hover {
         box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
+
+/* NOSOTROS */
 .nosotros {
     width: 90%;
     margin: auto;
@@ -179,7 +197,10 @@ footer {
 }
 .nosotros__text {
     line-height: 25px;
+    max-width: 500px;
 }
+
+/* ICONOS */
 .iconos{
     text-align: center;
     display: flex;
@@ -204,6 +225,12 @@ footer {
     margin-bottom: 50px;
 }
 
+/* FORM */
+.width-btn {
+    width: 100%;
+    
+}
+
 /* Media Queries */
 @media (max-width: 880px) {
     .banner__btn {
@@ -218,6 +245,10 @@ footer {
     }
     .destinos__cards{
         flex-direction: column;
+    }
+    .destinos__card img {
+        width: auto;
+        height: 400px;
     }
     .paquetes {
         padding-top: 50px;
@@ -239,6 +270,7 @@ footer {
     }
     .nosotros__text {
         text-align: center;
+        margin: 0 auto;
     }
     .nosotros__text h2 {
         margin-bottom: 15px;
@@ -265,6 +297,10 @@ footer {
     }
     .destinos__cards{
         flex-direction: column;
+    }
+    .destinos__card img {
+        width: auto;
+        height: 350px;
     }
     .paquetes {
         padding-top: 50px;
