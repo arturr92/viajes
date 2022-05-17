@@ -1,0 +1,65 @@
+.banner {
+    position: relative;
+
+    &__bg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .banner__img {
+            width: 100%;
+        }
+
+        .banner__content {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            & h2 {
+                position: relative;
+                color: $white;
+                font-size: 100px;
+
+                @include tablet {
+                    font-size: 60px;
+                }
+
+                @include mobile {
+                    font-size: 25px;
+                    text-align: center;
+                }
+            }
+
+            .banner__btn {
+                display: inline-block;
+                font-size: 25px;
+                margin-top: 20px;
+                padding: 20px 40px;
+                border: 1px solid $white;
+                color: $white;
+                text-decoration: none;
+                background: transparent;
+                cursor: pointer;
+
+                @include tablet {
+                    font-size: 30px;
+                    padding: 25px;
+                }
+
+                @include mobile {
+                    font-size: 10px;
+                    padding: 10px;
+                }
+
+                &:hover {
+                    background-color: $mainColor;
+                    border: 1px solid $mainColor;
+                    transition: 1s;
+                }
+            }  
+        }
+    }
+}

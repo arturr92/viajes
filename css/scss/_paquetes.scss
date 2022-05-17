@@ -1,0 +1,121 @@
+.paquetes {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+    @include tablet {
+        padding-top: 50px;
+        margin-top: 60px;
+    }
+
+    @include mobile {
+        padding-top: 50px;
+    }
+
+    .paquetes__cards {
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include tablet {
+            flex-direction: column;
+        }
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        .paquetes__card {
+            flex-basis: 31%;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            text-align: center;
+            border:  2px;
+            padding: 0px 5px 25px 5px;
+            background: $paquetesCard;
+
+            &:hover {
+                box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+            }
+
+            & img {
+                width: 100%;
+                border-radius: 10px;
+
+                @include tablet {
+                    height: 70vh;
+                }
+
+                @include mobile {
+                    height: 50vh;
+                }
+            }
+
+            & h3 {
+                margin: 5px 0px 5px 0px;
+            }
+
+            & p {
+                margin: 5px 0px 5px 0px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+.section {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+
+    @include tablet {
+        padding-top: 50px;
+        margin-top: 60px;
+    }
+
+    @include mobile {
+        padding-top: 50px;
+    }
+
+    .section__cards {
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include tablet {
+            flex-direction: column;
+        }
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        .section__card {
+            flex-basis: 21%;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            text-align: center;
+            border:  2px;
+            padding: 30px;
+            background: $paquetesCard;
+
+            &:hover {
+                box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+            }
+
+            & h3 {
+                font-size: 25px;
+                text-align: center;
+            }
+
+            & p {
+                text-align: center;
+                line-height: 19px;
+            }
+        }
+    }
+}
