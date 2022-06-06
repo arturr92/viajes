@@ -1,0 +1,30 @@
+footer {
+    background-color: $mainColor;
+
+    .logo {
+        i {
+            font-size: 6rem;
+            color: $yellow;
+        }
+    }
+
+    .footer-p {
+        margin-top: 2rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .footer__links a {
+        color: $white;
+
+        &:hover{
+            color: $yellow;
+            padding-left: 1.5rem;
+            
+        }
+    }
+
+    @include mobile_s {
+        text-align: center;
+    }
+} 

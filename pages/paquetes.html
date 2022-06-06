@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Encontra nuestros mejores paquetes, y podras viajar a un precio increible">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
     <title>Nuestros Paquetes</title>
@@ -16,12 +18,15 @@
     <header>
         <nav class="navbar navbar-expand-md ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html"><img src="/assets/images/logo.png" alt="Logo" width="100" height="100"><p class="text-light">Sin Escalas</p></a>
+                <a class="navbar-brand logo" href="/index.html"><i class="fa-solid fa-plane-departure"></i>Sin Escalas</a>
                 <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Inicio</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
                         </li>
@@ -42,53 +47,174 @@
             </div>
         </nav>
     </header>
-
+    <!------------------------ TERMINA HEADER & NAV -------------------------->
 
     <!---------------------------- PAQUETES --------------------------------->
 
+    <div class="heading">
+        <h1>!Viaja con nosotros!</h1>
+        <span>Al destino de tus sueños</span>
+    </div>
+
     <main class="paquetes">
-        <h1>Paquetes</h1>
-        <div class="paquetes__cards">
-            <div class="paquetes__card">
-                <img src="/assets/images/destinos_canada_ln.jpg" alt="canada">
-                <h2>Toronto</h2>
-                <p>$540.952</p>
-                <p>Vuelo con escalas | Delta Hotels Toronto | 15 dias / 14 noches | Asistencia al viajero | Desayuno incluido</p>
+
+        <h2>Nuestros Mejores Paquetes</h2>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <div class="imagen">
+                    <img src="/assets/images/destinos_londres.jpg" alt="Londres">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Londres </h3>
+                </div>
+                <div class="contenido">
+                    <h4>$391.255</h4>
+                    <p>Vuelo con escalas | Lancaster Gate Hotel | Traslados | Asistencia al viajero | 15 dias - 13 noches</p>
+                    <a href="#" class="btn"> Reservar</a>
+                </div>
             </div>
-            <div class="paquetes__card">
-                <img src="/assets/images/destinos_grecia_ln.jpg" alt="grecia">
-                <h2>Atenas</h2>
-                <p>$359.850</p>
-                <p>Vuelo ida y vuelta | Hotel Katerina |  | Asistencia al viajero | 7 dias / 5 noches | Desayuno buffet</p>
+    
+            <div class="box">
+                <div class="imagen">
+                    <img src="/assets/images/destinos_paris.jpg" alt="Paris">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Paris </h3>
+                </div>
+                <div class="contenido">
+                    <h4>$353.011</h4>
+                    <p>Vuelo con escalas | Magic Circus Hotel at Disneyland Paris | Fechas flexibles | Asistencia al viajero</p>
+                    <a href="#" class="btn"> Reservar</a>
+                </div>
             </div>
-            <div class="paquetes__card">
-                <img src="/assets/images/destinos_londres_ln.jpg" alt="londres">
-                <h2>Londres</h2>
-                <p>$391.255</p>
-                <p>Vuelo con escalas | Lancaster Gate Hotel | Traslados | Asistencia al viajero | 15 dias / 13 noches</p>
+    
+            <div class="box">
+                <div class="imagen">
+                    <img src="/assets/images/destinos_roma.jpg" alt="Roma">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Roma </h3>
+                </div>
+                <div class="contenido">
+                    <h4>$316.424</h4>
+                    <p>Vuelo con escalas | Novotel Roma La Rustica | Excursiones | Asistencia al viajero | Desayuno incluido</p>
+                    <a href="#" class="btn"> Reservar</a>
+                </div>
             </div>
-            <div class="paquetes__card">
-                <img src="/assets/images/destinos_paris_ln.jpg" alt="paris">
-                <h2>Paris</h2>
-                <p>$353.011</p>
-                <p>Vuelo con escalas | Magic Circus Hotel at Disneyland Paris | Fechas flexibles | Asistencia al viajero</p>
+
+            <div class="box">
+                <div class="imagen">
+                    <img src="/assets/images/Egipto.jpg" alt="Egipto">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Egipto </h3>
+                </div>
+                <div class="contenido">
+                    <h4>$440.255</h4>
+                    <p>Vuelo con escalas | Traslados | Asistencia al viajero | 10 dias - 9 noches</p>
+                    <a href="#" class="btn"> Reservar</a>
+                </div>
             </div>
-            <div class="paquetes__card">
-                <img src="/assets/images/destinos_rio_ln.jpg" alt="rio de janeiro">
-                <h2>Rio de Janeiro</h2>
-                <p>$105.500</p>
-                <p>Vuelo | Hotel con desayuno | Traslados | Asistencia al viajero | Full day Ilha Grande</p>
+    
+            <div class="box">
+                <div class="imagen">
+                    <img src="/assets/images/destinos_rio_ln.jpg" alt="Rio">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Rio </h3>
+                </div>
+                <div class="contenido">
+                    <h4>$250.050</h4>
+                    <p>Vuelo directo | Copacabana Palace | Fechas flexibles | Asistencia al viajero</p>
+                    <a href="#" class="btn"> Reservar</a>
+                </div>
             </div>
-            <div class="paquetes__card">
-                <img src="/assets/images/destinos_roma_ln.jpg" alt="roma">
-                <h2>Roma</h2>
-                <p>$316.424</p>
-                <p>Vuelo con escalas | Novotel Roma La Rustica | Excursiones | Asistencia al viajero | Desayuno incluido</p>
+    
+            <div class="box">
+                <div class="imagen">
+                    <img src="/assets/images/mumbai.jpg" alt="Mumbai">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Mumbai </h3>
+                </div>
+                <div class="contenido">
+                    <h4>$500.000</h4>
+                    <p>Vuelo con escalas | Excursiones | Asistencia al viajero | Desayuno incluido</p>
+                    <a href="#" class="btn"> Reservar</a>
+                </div>
             </div>
+
+            <div class="box">
+                <div class="imagen">
+                    <img src="/assets/images/sydney.jpg" alt="Sydney">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Sydney </h3>
+                </div>
+                <div class="contenido">
+                    <h4>$450.255</h4>
+                    <p>Vuelo con escalas | Asistencia al viajero | 10 dias - 9 noches</p>
+                    <a href="#" class="btn"> Reservar</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="imagen">
+                    <img src="/assets/images/tokio.jpg" alt="Tokio">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Tokio </h3>
+                </div>
+                <div class="contenido">
+                    <h4>$623.200</h4>
+                    <p>Vuelo con escalas | Fechas flexibles | Asistencia al viajero</p>
+                    <a href="#" class="btn"> Reservar</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="imagen">
+                    <img src="/assets/images/destinos_canada_ln.jpg" alt="Canada">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Canada </h3>
+                </div>
+                <div class="contenido">
+                    <h4>$416.424</h4>
+                    <p>Vuelo con escalas | Excursiones | Asistencia al viajero | Desayuno incluido</p>
+                    <a href="#" class="btn"> Reservar</a>
+                </div>
+            </div>
+    
         </div>
+    
     </main>
 
-    <!---------------------------- SECTION --------------------------------->
+    <!---------------------------- PUBLICIDAD --------------------------------->
+    <section class="publicidad">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="d-block w-100" src="/assets/images/hotsalee6.png" alt="">
+                </div>
+                <div class="col-md-6"> 
+                    <div id="carouselExampleInterval" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="/assets/images/hotsale2.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="/assets/images/hotsale3.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/images/hotsale4.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/images/hotsale5.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------- TERMINA PUBLICIDAD --------------------------------->
+    
+
+    <!---------------------------- SECTION CARD --------------------------------->
 
     <section class="section">
         <h2>Disfrutá tus vacaciones con los mejores paquetes</h2>
@@ -98,28 +224,29 @@
                 <p>Al comprar tus paquetes turísticos podés conseguir un valor más bajo en tu viaje, ya que al sumar un alojamiento o un auto, obtenés un descuento significativo. ¡Comprar paquetes de viaje siempre te va a resultar más barato! Podés armar tu paquete a medida, ahorrar en el valor total y gastar esa plata en tu viaje. ¡Aprovechá viajes baratos a un sinfín de destinos!</p>
             </div>
             <div class="section__card">
-                <h3>¿Qué paquetes conseguís en Despegar?</h3>
+                <h3>¿Qué paquetes conseguís en Sin Escalas?</h3>
                 <p>En Sin Escalas podés armar tu propio paquete de viaje incluyendo el vuelo y un alojamiento, vuelo y 2 alojamientos, o vuelo y un auto. Elegí la primera opción si vas a un destino y decidís quedarte solo ahí. La segunda es para quien quiere volar a un destino y además conocer otro. Y la tercera, para quien desea tener su propia movilidad durante el viaje. ¡Hay paquetes turísticos para todos los gustos!</p>
             </div>
             <div class="section__card">
                 <h3>¿Qué tener en cuenta para elegir un paquete?</h3>
                 <p>A la hora de elegir tu paquete turístico te recomendamos tener en cuenta las fechas exactas del viaje, la puntuación del alojamiento, la información de los vuelos, el número de pasajeros y la cantidad de habitaciones que deseás. Además, prestá atención a qué incluye la tarifa del alojamiento y del pasaje aéreo que selecciones. ¡Armá tu paquete a medida!</p>
             </div>
-            <div class="section__card">
+            <div class="section__card bottom">
                 <h3>¿Qué productos podés incluir en tu paquete?</h3>
                 <p>Una vez que elijas tu paquete turístico vas a poder sumar otros productos, como el alquiler de un auto, el traslado desde el aeropuerto y actividades para hacer en tu destino. Armá tu paquete como vos quieras. Comprá actividades para conocer los puntos turísticos más importantes del lugar al que viajás, o contratá un traslado para llegar más rápido y cómodo a tu alojamiento.</p>
             </div>
         </div>
     </section>
 
+    <!------------------------------- TERMINA SECTION CARD ------------------------------------->
+
     <!---------------------------- FOOTER --------------------------------->
+
     <footer class="container-fluid">
         <div class="row p-5 pb-2 text-white">
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                <a class="text-decoration-none text-white" href="/index.html"><p class="h3">Sin Escalas</p>
-                    <div><img class="img-fluid" width="150px" height="100" src="/assets/images/logo.png" alt="Logo"></div>
-                </a>
-            </div>
+                <a class="text-decoration-none text-white logo" href="/index.html"><i class="fa-solid fa-plane-departure"></i> <p class="footer-p">Sin Escalas</p></a>
+                </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
                 <p class="h5 mb-3">Links</p>
                 <div class="mb-2 footer__links">
@@ -141,19 +268,19 @@
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
                 <p class="h5 mb-3">Redes Sociales</p>
                 <div class="footer__links">
-                    <a class="text-decoration-none" href="#"><i class="bi bi-instagram me-3"></i>Instagram</a>
+                    <a class="text-decoration-none" href="#"><i class="fa-brands fa-instagram me-3"></i>Instagram</a>
                 </div>
                 <div class="footer__links">
-                    <a class="text-decoration-none" href="#"><i class="bi bi-facebook me-3"></i>Facebook</a>
+                    <a class="text-decoration-none" href="#"><i class="fa-brands fa-facebook me-3"></i>Facebook</a>
                 </div>
                 <div class="footer__links">
-                    <a class="text-decoration-none" href="#"><i class="bi bi-twitter me-3"></i>Twitter</a>
+                    <a class="text-decoration-none" href="#"><i class="fa-brands fa-twitter me-3"></i>Twitter</a>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
                 <p class="h5 mb-3">Contacto</p>
                 <div class="mb-2">
-                    <p>Email: sin_escalas@sin_escalas.com.ar</p>
+                    <p>Email: sin-escalas@gmail.com</p>
                 </div>
                 <div class="mb-2">
                     <p>Telefono: 11-3231-4454</p>
@@ -167,6 +294,7 @@
             </div>
         </div>
     </footer>
+    <!---------------------------- TERMINA FOOTER --------------------------------->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

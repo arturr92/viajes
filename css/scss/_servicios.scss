@@ -1,0 +1,69 @@
+.servicios {
+
+    h2 {
+        text-align: center;
+        color: $h2;
+        margin-bottom: 3rem;
+    }
+
+    .container {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        grid-auto-rows: minmax(10rem, auto);    
+
+
+        @include mobile {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mobile_s {
+            grid-template-columns: repeat(1, 1fr);
+            width: 80%;
+        }
+
+        .box {
+            border-radius: 1rem;
+            text-align: center;
+            background: #fff;   
+            border: .2rem solid black;
+            margin-bottom: 1.5rem;
+            padding-top: 1rem;
+
+            &:hover {
+                background: $mainColor;
+                border: .2rem solid $orange;
+
+                i {
+                    color: $yellow;
+                }
+
+                h3 {
+                    color: $yellow;
+                }
+
+                p {
+                    color: $black;
+                }
+            }
+
+            i {
+                font-size: 2.5rem;
+                color: $orange;
+                margin-bottom: 2rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                color: $mainColor;
+            }
+
+            p {
+                font-size: .9rem;
+                color: $text;
+            }
+        }
+    }
+
+}

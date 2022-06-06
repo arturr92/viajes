@@ -1,69 +1,128 @@
+.heading {
+    text-align: center;
+    padding-top: 2.5rem; padding-bottom: 2.5rem;
+
+    h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: $orange;
+    }
+
+    span {
+        font-size: 2rem;
+        position: relative;
+        color: $black;
+        z-index: 0;
+
+        &::before{
+            content: '';
+            position: absolute;
+            z-index: -1;
+            background: $yellow;
+            height: 100%;
+            width: 100%;
+            clip-path: polygon(0 90%, 100% 85%, 100% 100%, 100% 100%);
+        }
+    }
+}
+
+
 .destinos {
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 2.5rem;
 
-    @include tablet {
-        padding-top: 50px;
+    h2 {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+        color: #444;
     }
 
     @include mobile {
-        padding-top: 50px;
+        h2 {
+            font-size: 2.8rem;
+        }
     }
 
     .destinos__cards {
-        margin-top: 5%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-
-        @include tablet {
-            flex-direction: column;
-        }
+        padding-bottom: 2rem;
 
         @include mobile {
             flex-direction: column;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .margin {
+            margin-bottom: 3.5rem;
         }
 
         .destinos__card {
             flex-basis: 31%;
-            border-radius: 10px;
-            margin-bottom: 2%;
+            border-radius: 1rem;
             text-align: center;
-            padding: 10px;
-            transition: 1s;
+            background: #fff;
+            overflow: hidden;      
+            padding-bottom: 1rem;
+            cursor: pointer;
 
             &:hover {
-                background-color: $cardHover;
-                box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+                transform: scale(1.1);
+                box-shadow: $box-shadow;
             }
 
-            & img {
+            .imagen {
+                height: 15rem;
+                overflow: hidden;
                 width: 100%;
-                height: 50vh;
-                border-radius: 10px;
 
-                @include tablet {
-                    width: auto;
-                    height: 350px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
                 }
-
-                @include mobile {
-                    width: auto;
-                    height: 300px;
-                }
+            }
             }
 
             & h3 {
-                margin: 5px 0px 5px 0px;
+                padding-top: .6rem;   
+                font-size: 1.5rem;
+                color: $mainColor;
             }
 
             & p {
-                margin: 5px 0px 5px 0px;
-                line-height: 19px;
+                font-size: 1rem;
+                color: $text;
+            }
+
+            @include tablet {
+                padding-bottom: .1rem;
+    
+                p {
+                    font-size: .9rem;
+                }
+    
+                .btn {
+                    font-size: 1rem;
+                }
+            }
+
+            @include mobile {
+                gap: 2rem;
                 text-align: center;
+
+                h3 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
             }
         }
-    }
 }
+

@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bienvenido a nuestros mejores destinos, donde encontras lugares hermosos para visitar">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
     <title>Nuestros Destinos</title>
@@ -16,12 +18,15 @@
     <header>
         <nav class="navbar navbar-expand-md ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html"><img src="/assets/images/logo.png" alt="Logo" width="100" height="100"><p class="text-light">Sin Escalas</p></a>
+                <a class="navbar-brand logo" href="/index.html"><i class="fa-solid fa-plane-departure"></i>Sin Escalas</a>
                 <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Inicio</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
                         </li>
@@ -42,53 +47,102 @@
             </div>
         </nav>
     </header>
+    <!------------------------ TERMINA HEADER & NAV -------------------------->
 
 
     <!---------------------------- DESTINOS --------------------------------->
+
+    <div class="heading">
+        <h1>!Viaja con nosotros!</h1>
+        <span>Al destino de tus sueños</span>
+    </div>
+
     <main class="destinos">
-        <h1>Proximos destinos</h1>
+        <h2>Proximos Destinos</h1>
         <div class="destinos__cards">
-            <div class="destinos__card">
-                <img src="/assets/images/destinos_londres_ln.jpg" alt="londres">
-                <h2>Londres</h2>
-                <p>Todo en Londres es icónico, desde el reloj Big Ben, hasta los famosos teléfonos públicos rojos o la noria London Eye. Explorá el mundo jurásico y más en el Museo de Historia Natural, divierte tanto a chicos como grandes. Sentite como la realeza cuando visites el Palacio de Buckingham o, ¡pretendé ser un Beatle más cuando cruces Abbey Road! Somos donde estuvimos, nos llevamos algo de cada parte y Londres es un escenario de para vivir cientos de experiencias, no dejes de conocerla.</p>
+            <div class="destinos__card margin">
+                <img class="imagen" src="/assets/images/destinos_londres.jpg">
+                <h3>Londres</h3>
+                <p>Todo en Londres es icónico, desde el reloj Big Ben, hasta los famosos teléfonos públicos rojos o la noria London Eye. </p>
+                <a href="./pages/destinos.html" class="btn">¡Conoce mas!</a>
             </div>
-            <div class="destinos__card">
-                <img src="/assets/images/destinos_roma_ln.jpg" alt="roma">
-                <h2>Roma</h2>
-                <p>Roma es un museo al aire libre, entre sus calles te encontrarás con trozos de historia. Cada rincón remonta algún tiempo pasado: el Panteón te mostrará la fuerza de los dioses; la Fontana di Trevi te cumplirá el deseo que quieras y el Coliseo te sorprenderá con su imponente estructura y recuerdos de sus batallas. Después de tanto recorrer frená en la Plaza España y comé todo, la comida en Italia es más que un imperdible. Disfrutala, no solo al caminarla, sino en cada descanso.</p>
+            <div class="destinos__card margin">
+                <img class="imagen" src="/assets/images/destinos_roma.jpg">
+                <h3>Roma</h3>
+                <p>Roma es un museo al aire libre, entre sus calles te encontrarás con trozos de historia. Cada rincón remonta al pasado.</p>
+                <a href="./pages/destinos.html" class="btn">¡Conoce mas!</a>
             </div>
-            <div class="destinos__card">
-                <img src="/assets/images/destinos_paris_ln.jpg" alt="paris">
-                <h2>Paris</h2>
-                <p>La eterna ciudad de los enamorados, París. Caminá sobre la Avenida de los Campos Elíseos y tentate con su glamour: sus locales y monumentos tienen luz propia. Emocionate con las cicatrices de la Catedral de Notre Dame, el emblema de la ciudad que intenta renacer de sus cenizas; juntá fuerzas y subí a la Basílica del Sacré Cœur, el rincón perfecto para ver y sentir París de una forma única. Los viajes nos hacen, nos marcan, no delimitan y en cada recuerdo, siempre te quedará París.</p>
+            <div class="destinos__card margin">
+                <img class="imagen" src="/assets/images/destinos_paris.jpg">
+                <h3>Paris</h3>
+                <p>La eterna ciudad de los enamorados, París. Caminá sobre la Avenida de los Campos Elíseos y tentate con su glamour.</p>
+                <a href="./pages/destinos.html" class="btn">¡Conoce mas!</a>
             </div>
-            <div class="destinos__card">
-                <img src="/assets/images/destinos_canada_ln.jpg" alt="canada">
-                <h2>Toronto</h2>
-                <p>Toronto tiene un poco de todo. Cosmopolita, sus distintas raíces se pueden ver en los barrios. Probá la comida típica en China Town, disfrutá de las ferias en Little Italy y más, cada barrio tiene su particularidad. Sinónimo de hockey sobre hielo, sus estadios y paseos de la fama son reconocidos en todo el mundo y un imperdible para visitar. Seguí explorando, andá a Distillery Historic Distric vas encontrarte con el pasado de la ciudad y su cultura. Si sos amante de las alturas, subí CN Tower tiene una vista espejada de toda la ciudad. Llenate de todo lo que Toronto tiene para ofrecer.</p>
+            <div class="destinos__card margin">
+                <img class="imagen" src="/assets/images/destinos_canada_ln.jpg">
+                <h3>Toronto</h3>
+                <p>Se dice que Toronto es “Nueva York administrada por los suizos”, y es verdad: podés encontrar teatros, tiendas y restaurantes de primer nivel.</p>
+                <a href="./pages/destinos.html" class="btn">¡Conoce mas!</a>
             </div>
-            <div class="destinos__card">
-                <img src="/assets/images/destinos_rio_ln.jpg" alt="rio de janeiro">
-                <h2>Rio de Janeiro</h2>
-                <p>Río de Janeiro siempre es carnaval, quien no escuchó que es la ciudad más feliz del mundo. Playas y morros hacen que cuando la visites, bailes al ritmo de la samba, la bossa nova y el funk. Quedate bajo la mirada del Cristo Redentor en la cima del cerro Corcovado y sentí cómo fluye la energía. Disfrutá de sus largas playas de arena blanca y aguas transparentes. Encontrá todo en Copacabana, la más popular de la ciudad, y el lugar para que sientas la alegría brasileña.</p>
+            <div class="destinos__card margin">
+                <img class="imagen" src="/assets/images/destinos_grecia_ln.jpg">
+                <h3>Grecia</h3>
+                <p>Grecia es uno de esos lugares únicos en los que la historia antigua sigue siendo parte de la vida moderna.</p>
+                <a href="./pages/destinos.html" class="btn">¡Conoce mas!</a>
             </div>
-            <div class="destinos__card">
-                <img src="/assets/images/destinos_grecia_ln.jpg" alt="grecia">
-                <h2>Atenas</h2>
-                <p>Atenas fue digna de dioses, en cada callecita, rincón lo verás, ¡qué comience el recorrido! Subir por las escaleras de los propileos es una sensación única, en cada paso te acercás al Acrópolis. La ciudad en la cima con más de 30 monumentos imperdibles te espera. Sin previo aviso aparece el Odeón de Herodes, el teatro que fue escenario de grandes obras, y que si tenés la suerte, podés ver alguna en tu estadía. Respirá historia en Partenón, de día o de noche oxigena; sentite como un Dios en el Plaka, no solo por la arquitectura, sino por su gastronomía es digna de tales.</p>
+            <div class="destinos__card margin">
+                <img class="imagen" src="/assets/images/destinos_rio_ln.jpg">
+                <h3>Rio de Janeiro</h3>
+                <p>Con sus playas abundantes, sus dramáticas montañas y el ritmo de la samba y el bossa nova como telón de fondo, es fácil enamorarse de Río de Janeiro.</p>
+                <a href="./pages/destinos.html" class="btn">¡Conoce mas!</a>
+            </div>
+            <div class="destinos__card margin">
+                <img class="imagen" src="/assets/images/Egipto.jpg">
+                <h3>Egipto</h3>
+                <p>Enigmático tesoro oculto de una riqueza cultural y arqueológica casi inimaginable. Conoce las piramides</p>
+                <a href="./pages/destinos.html" class="btn">¡Conoce mas!</a>
+            </div>
+            <div class="destinos__card margin">
+                <img class="imagen" src="/assets/images/mumbai.jpg">
+                <h3>Mumbai</h3>
+                <p>A pesar de que Mumbai puede parecer caótica y abarrotada, también se pueden encontrar momentos de paz. </p>
+                <a href="./pages/destinos.html" class="btn">¡Conoce mas!</a>
+            </div>
+            <div class="destinos__card margin">
+                <img class="imagen" src="/assets/images/tokio.jpg">
+                <h3>Tokio</h3>
+                <p>Con sus rascacielos futurísticos, su ambiente gastronómico incomparable y su vida nocturna salvaje, Tokio es una descarga de pura adrenalina.</p>
+                <a href="./pages/destinos.html" class="btn">¡Conoce mas!</a>
             </div>
         </div>
     </main> 
 
+    <!---------------------------- DESCUENTO --------------------------------->
+
+    <section class="descuento">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contenido">
+                        <h3>5% de Descuento</h3>
+                        <p class="titulo">Viaje a Canada</p>
+                        <p class="fecha">20 de Julio de 2022 - 28 de Julio de 2022</p>
+                        <p class="precio">$2,500 USD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------- TERMINA DESCUENTO --------------------------------->
+
     <!---------------------------- FOOTER --------------------------------->
+
     <footer class="container-fluid">
         <div class="row p-5 pb-2 text-white">
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-                <a class="text-decoration-none text-white" href="/index.html"><p class="h3">Sin Escalas</p>
-                    <div><img class="img-fluid" width="150px" height="100" src="/assets/images/logo.png" alt="Logo"></div>
-                </a>
-            </div>
+                <a class="text-decoration-none text-white logo" href="/index.html"><i class="fa-solid fa-plane-departure"></i> <p class="footer-p">Sin Escalas</p></a>
+                </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
                 <p class="h5 mb-3">Links</p>
                 <div class="mb-2 footer__links">
@@ -110,19 +164,19 @@
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
                 <p class="h5 mb-3">Redes Sociales</p>
                 <div class="footer__links">
-                    <a class="text-decoration-none" href="#"><i class="bi bi-instagram me-3"></i>Instagram</a>
+                    <a class="text-decoration-none" href="#"><i class="fa-brands fa-instagram me-3"></i>Instagram</a>
                 </div>
                 <div class="footer__links">
-                    <a class="text-decoration-none" href="#"><i class="bi bi-facebook me-3"></i>Facebook</a>
+                    <a class="text-decoration-none" href="#"><i class="fa-brands fa-facebook me-3"></i>Facebook</a>
                 </div>
                 <div class="footer__links">
-                    <a class="text-decoration-none" href="#"><i class="bi bi-twitter me-3"></i>Twitter</a>
+                    <a class="text-decoration-none" href="#"><i class="fa-brands fa-twitter me-3"></i>Twitter</a>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
                 <p class="h5 mb-3">Contacto</p>
                 <div class="mb-2">
-                    <p>Email: sin_escalas@sin_escalas.com.ar</p>
+                    <p>Email: sin-escalas@gmail.com</p>
                 </div>
                 <div class="mb-2">
                     <p>Telefono: 11-3231-4454</p>
@@ -136,7 +190,7 @@
             </div>
         </div>
     </footer>
-
+    <!---------------------------- TERMINA FOOTER --------------------------------->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

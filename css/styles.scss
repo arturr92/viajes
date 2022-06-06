@@ -1,53 +1,62 @@
-@import './scss/colors';
-@import './scss/media-queries';
+@import './scss/variables';
+@import './scss/mixin';
+@import './scss/navbar';
+@import './scss/footer';
 @import './scss/banner';
+@import './scss/publicidad';
 @import './scss/destinos';
 @import './scss/paquetes';
+@import './scss/servicios';
+@import './scss/descuento';
+@import './scss/form';
 @import './scss/testimoniales';
 @import './scss/nosotros';
 @import './scss/iconos';
 
-h1,h2,h3 {
-    font-family: 'Mulish', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;700&family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*  {
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: all .2s linear;
 }
 
-/* NAVBAR */
-.navbar {
-    background-color: $mainColor;
-    & p {
-        display: inline-block;
-        position: relative;
-        top: 12px;
-        margin-left: 20px;
-        font-size: 40px;
+html {
+    overflow-x: hidden;
 
-        @include mobile {
-            display: none;
-        }
+    &::-webkit-scrollbar {
+        width: .8rem;
     }
-    .nav-item a {
-        color: $white;
 
-        &:hover {
-            color: $yellow;
-        }
+    &::-webkit-scrollbar-track {
+        background: $white;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $mainColor;
     }
 }
 
-/* FOOTER */
-footer {
-    background-color: $mainColor;
+body {
+    background: #eee;
+}
 
-    .footer__links a {
-        color: $white;
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    color: $black;
+    border: $border;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    background: none;
 
-        &:hover{
-            color: $yellow;
-        }
+    &:hover {
+        background: $mainColor;
+        color: $yellow;
     }
-} 
-
-/* FORM */
-.width-btn {
-    width: 100%;
 }

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACR,MAAM,EAAE,OAAO;EACf,UAAU,EAAE,IAAI;EAAE,aAAa,EAAE,MAAM;CAC1C",
+    "sources": [
+        "publicidad.scss"
+    ],
+    "names": [],
+    "file": "publicidad.css"
+}

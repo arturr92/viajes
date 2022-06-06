@@ -1,65 +1,97 @@
 .banner {
-    position: relative;
+    margin: 0 auto;
+    margin-top: .5rem;
+    width: 90%;
+    border-radius: 1rem;
+    background: url(/assets/images/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    &__bg {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .content {
+        text-align: center;
 
-        .banner__img {
-            width: 100%;
+        span {
+            font-weight: bold;
+            color: $yellow;
+            font-size: 3rem;
+            display: block;
         }
 
-        .banner__content {
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+        h3 {
+            font-size: 4rem;
+            font-weight: bold;
+            color: transparent;
+            -webkit-text-stroke: .1rem $white;
+        }
 
-            & h2 {
-                position: relative;
-                color: $white;
-                font-size: 100px;
+        .btn {
+            color: $white;
+        }
 
-                @include tablet {
-                    font-size: 60px;
-                }
-
-                @include mobile {
-                    font-size: 25px;
-                    text-align: center;
-                }
+        @include mobile {
+            span {
+                font-size: 2.5rem;
             }
 
-            .banner__btn {
-                display: inline-block;
-                font-size: 25px;
-                margin-top: 20px;
-                padding: 20px 40px;
-                border: 1px solid $white;
-                color: $white;
-                text-decoration: none;
-                background: transparent;
-                cursor: pointer;
+            h3 {
+                font-size: 3.2rem;
+            }
+        } 
+    }
+}
 
-                @include tablet {
-                    font-size: 30px;
-                    padding: 25px;
-                }
+.banner-form {
+    width: 80%;
+    margin: 1rem auto;
+    margin-top: -5rem;
+    background: $black;
+    border-radius: .7rem;
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .3);
+    padding: 3rem 2rem;
 
-                @include mobile {
-                    font-size: 10px;
-                    padding: 10px;
-                }
+    @include tablet {
+        padding: 2rem 1rem;
+    }
 
-                &:hover {
-                    background-color: $mainColor;
-                    border: 1px solid $mainColor;
-                    transition: 1s;
+    form {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        gap: .3rem;
+
+        .inputBox {
+            flex: 1 1 15rem;
+
+            span {
+                font-size: 1rem;
+                color: $mainColor;
+            }
+
+            input {
+                width: 100%;
+                padding: .7rem .3rem;
+                border-radius: 5rem;
+                border: $border;
+                font-size: 1.2rem;
+                color: $mainColor;
+                text-transform: none;
+                background: none;
+                margin-top: 1rem;
+
+                &::placeholder {
+                    color: $yellow;
                 }
-            }  
+            }
+        }
+
+        .btn {
+            padding: .6rem .9rem;
+            flex: 1 1 .2rem;
+            color: $yellow;
         }
     }
 }
